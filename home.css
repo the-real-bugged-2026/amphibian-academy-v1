@@ -130,3 +130,31 @@ footer {
 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
+
+.title-wrapper {
+    position: relative;
+    text-align: center;
+}
+
+.profile-button {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    font-weight: 700;
+
+    padding: 8px 18px;
+    background: rgba(229, 242, 179, 0.7);
+    border: 3px solid #40916c;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.profile-button:hover {
+    transform: translateY(-50%) scale(1.05);
+    transition: transform 0.2s ease;
+}
