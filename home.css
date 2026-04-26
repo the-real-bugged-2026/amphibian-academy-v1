@@ -65,8 +65,8 @@ body {
 .math,
 .history,
 .science {
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
 
     background-image: url("Lilypad.png");
     background-size: contain;
@@ -123,10 +123,10 @@ footer {
     padding: 5px 5px 10px 5px;
 
 
-    background: rgba(242, 224, 88, 0.5); /* same minty transparent */
+    background: rgba(229, 242, 179, 0.5); /* mint green but transparent */
     border-radius: 25px;
 
-    border: 4px solid #debe68;
+    border: 4px solid #40916c;
 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
