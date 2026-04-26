@@ -1,0 +1,21 @@
+<svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="frogBody" x1="70" y1="60" x2="290" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8BFA97"/>
+      <stop offset="1" stop-color="#1E9A59"/>
+    </linearGradient>
+    <linearGradient id="frogFace" x1="105" y1="98" x2="255" y2="255" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D4FFD9"/>
+      <stop offset="1" stop-color="#8BDF8F"/>
+    </linearGradient>
+  </defs>
+  <rect x="24" y="34" width="312" height="292" rx="96" fill="url(#frogBody)"/>
+  <circle cx="118" cy="116" r="40" fill="#A8F1A5"/>
+  <circle cx="242" cy="116" r="40" fill="#A8F1A5"/>
+  <circle cx="118" cy="116" r="15" fill="#173A2A"/>
+  <circle cx="242" cy="116" r="15" fill="#173A2A"/>
+  <rect x="90" y="150" width="180" height="130" rx="50" fill="url(#frogFace)"/>
+  <rect x="108" y="205" width="144" height="28" rx="14" fill="#2D8A52"/>
+  <ellipse cx="148" cy="218" rx="9" ry="6" fill="#184B32"/>
+  <ellipse cx="212" cy="218" rx="9" ry="6" fill="#184B32"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg width="360" height="360" viewBox="0 0 360 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="botShell" x1="58" y1="46" x2="302" y2="322" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#BDE5FF"/>
+      <stop offset="1" stop-color="#4A8DFF"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="112" y1="110" x2="248" y2="250" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFFFFF"/>
+      <stop offset="1" stop-color="#AEE6FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="30" y="36" width="300" height="288" rx="92" fill="url(#botShell)"/>
+  <rect x="88" y="86" width="184" height="188" rx="48" fill="url(#screen)"/>
+  <rect x="120" y="130" width="44" height="44" rx="14" fill="#0D4A8A"/>
+  <rect x="196" y="130" width="44" height="44" rx="14" fill="#0D4A8A"/>
+  <rect x="128" y="208" width="104" height="24" rx="12" fill="#1D6DB2"/>
+  <circle cx="96" cy="288" r="18" fill="#D2F0FF"/>
+  <circle cx="264" cy="288" r="18" fill="#D2F0FF"/>
+</svg>
