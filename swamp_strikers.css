@@ -51,7 +51,7 @@ body {
   gap: 0.8rem;
   --cut: 14px;
   border: none;
-  clip-path: polygon(
+  /* clip-path: polygon(
     var(--cut) 0,
     calc(100% - var(--cut)) 0,
     100% var(--cut),
@@ -60,7 +60,8 @@ body {
     var(--cut) 100%,
     0 calc(100% - var(--cut)),
     0 var(--cut)
-  );
+  ); */
+  border-radius: 25px;
   background:
     linear-gradient(130deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0) 45%),
     var(--surface);
@@ -98,7 +99,7 @@ body {
   position: relative;
   --cut: 24px;
   border: none;
-  clip-path: polygon(
+  /* clip-path: polygon(
     var(--cut) 0,
     calc(100% - var(--cut)) 0,
     100% var(--cut),
@@ -107,7 +108,8 @@ body {
     var(--cut) 100%,
     0 calc(100% - var(--cut)),
     0 var(--cut)
-  );
+  ); */
+  border-radius: 25px;
   background: var(--surface-strong);
   box-shadow: 0 20px 48px rgba(8, 48, 37, 0.22);
   padding: 1rem;
@@ -194,14 +196,15 @@ p {
   position: relative;
   --cut: 16px;
   border: none;
-  clip-path: polygon(
+  /* clip-path: polygon(
     var(--cut) 0,
     100% 0,
     100% calc(100% - var(--cut)),
     calc(100% - var(--cut)) 100%,
     0 100%,
     0 var(--cut)
-  );
+  ); */
+  border-radius: 25px;
   background: linear-gradient(170deg, #effff7, #ddf3e8);
   padding: 0.9rem;
   display: grid;
@@ -275,7 +278,7 @@ select {
   position: relative;
   --cut: 20px;
   border: none;
-  clip-path: polygon(
+  /* clip-path: polygon(
     0 var(--cut),
     var(--cut) 0,
     calc(100% - var(--cut)) 0,
@@ -284,12 +287,13 @@ select {
     calc(100% - var(--cut)) 100%,
     var(--cut) 100%,
     0 calc(100% - var(--cut))
-  );
+  ); */
   /* background:
     radial-gradient(circle at 72% 18%, rgba(255, 255, 255, 0.58), transparent 42%),
     linear-gradient(170deg, #d7fae8, #b5e2c8); */
+  border-radius: 25px;
   background-image: url(Star_Background.png);
-  background-size: 100%;
+  background-size: 50%;
   padding: 1rem;
 }
 
@@ -312,14 +316,15 @@ select {
   min-width: 286px;
   --cut: 12px;
   border: none;
-  clip-path: polygon(
+  /* clip-path: polygon(
     0 var(--cut),
     var(--cut) 0,
     100% 0,
     100% calc(100% - var(--cut)),
     calc(100% - var(--cut)) 100%,
     0 100%
-  );
+  ); */
+  border-radius: 25px;
   background: rgba(244, 255, 249, 0.92);
   padding: 0.55rem;
   display: grid;
@@ -443,14 +448,15 @@ select {
   position: relative;
   --cut: 14px;
   border: none;
-  clip-path: polygon(
+  /* clip-path: polygon(
     0 0,
     calc(100% - var(--cut)) 0,
     100% var(--cut),
     100% 100%,
     var(--cut) 100%,
     0 calc(100% - var(--cut))
-  );
+  ); */
+  border-radius: 25px;
   background: linear-gradient(170deg, #f1fff9, #e5fbf1);
   padding: 0.82rem;
   display: grid;
