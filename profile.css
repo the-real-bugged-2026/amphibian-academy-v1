@@ -73,3 +73,91 @@ body::before{
     gap: 12px;
     padding: 12px;
 }
+
+#picker {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 300px;
+}
+
+#hats-grid,
+#items-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.item-card {
+    width: 120px;
+    height: 120px;
+    background: rgba(255,255,255,0.8);
+    border: 2px solid #40916c;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grab;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.item-card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.item-card img {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}
+
+.reset-frog {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: grab;
+    padding: 8px 12px;
+    background: rgba(255,255,255,0.7);
+    border: 2px dashed #40916c;
+    border-radius: 12px;
+    font-family: 'Caveat', cursive;
+    font-size: 18px;
+    font-weight: 700;
+    color: #40916c;
+    transition: transform 0.15s ease;
+}
+
+.reset-frog:hover {
+    transform: scale(1.04);
+}
+
+.reset-frog img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.section-label {
+    font-family: 'Caveat', cursive;
+    font-size: 26px;
+    margin: 6px 0 2px;
+    color: #1b4332;
+}
+
+#frog_sprite {
+    width: 400px;
+    height: 500px;
+    background: rgba(255,255,255,0.6);
+    border: 3px dashed #40916c;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#frog-display {
+    width: 50%;
+    height: 50%;
+    object-fit: contain;
+}

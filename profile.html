@@ -4,36 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="Stylesheet" id="background" href="profile.css" />
+    <link rel="stylesheet" href="profile.css" />
 </head>
 <body>
     <h1 class="title">Customize Frog</h1>
-    <script src="script.js"></script>
-
-    <!-- <div class="sections">
-        <h2 class="Items"></h2>
-    </div> -->
 
     <div id="layout">
-        <!-- Draggable items -->
-        <div id="items">
-            <div class="items" draggable="true" data-item="frog1">1</div>
-            <div class="items" draggable="true" data-item="frog2">2</div>
-            <div class="items" draggable="true" data-item="frog3">3</div>
-            <div class="items" draggable="true" data-item="frog4">4</div>
-            <div class="items" draggable="true" data-item="frog5">5</div>
-            <div class="items" draggable="true" data-item="frog6">6</div>
-            <div class="items" draggable="true" data-item="frog7">7</div>
-            <div class="items" draggable="true" data-item="frog8">8</div>
+
+        <!-- Left: Item picker -->
+        <div id="picker">
+
+            <!-- Reset / naked frog draggable -->
+            <div class="reset-frog" draggable="true" data-type="reset">
+                <img src="frog_sprites/00.png" alt="Plain Frog" />
+                <span>Reset</span>
+            </div>
+
+            <h2 class="section-label">Hats</h2>
+            <div id="hats-grid">
+                <!-- one per hat: 1_.png, 2_.png, etc. -->
+                <div class="item-card" draggable="true" data-type="hat" data-id="1">
+                    <img src="frog_sprites/1_.png" alt="Hat 1" />
+                </div>
+                <div class="item-card" draggable="true" data-type="hat" data-id="2">
+                    <img src="frog_sprites/2_.png" alt="Hat 2" />
+                </div>
+                <div class="item-card" draggable="true" data-type="hat" data-id="2">
+                    <img src="frog_sprites/3_.png" alt="Hat 3" />
+                </div>
+                <!-- add more hats here -->
+            </div>
+
+            <h2 class="section-label">Items</h2>
+            <div id="items-grid">
+                <!-- one per item: _1.png, _2.png, etc. -->
+                <div class="item-card" draggable="true" data-type="item" data-id="1">
+                    <img src="frog_sprites/_1.png" alt="Item 1" />
+                </div>
+                <div class="item-card" draggable="true" data-type="item" data-id="2">
+                    <img src="frog_sprites/_2.png" alt="Item 2" />
+                </div>
+                <!-- add more items here -->
+            </div>
         </div>
 
-        <!-- Right: Sprite character -->
-        <div id="frog_sprite">
-            <div class="layer" id ="frog1">frog1 equipped</div>
-            <div class="layer" id ="frog2">frog2 equipped</div>
-            <div class="layer" id ="frog3">frog3 equipped</div>
-            <div class="layer" id ="frog4">frog4 equipped</div>
+        <!-- Right: Frog sprite display -->
+        <div id="frog_sprite"
+             ondragover="event.preventDefault()"
+             ondrop="handleDrop(event)">
+            <img id="frog-display" src="frog_sprites/00.png" alt="Your Frog" />
         </div>
-     </div>
+
+    </div>
+
+    <script src="profile.js"></script>
 </body>
 </html>
