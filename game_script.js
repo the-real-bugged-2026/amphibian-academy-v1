@@ -5,8 +5,8 @@ const COUNTDOWN_SECONDS = 3;
 
 const BOT_CONFIG = {
   easy: { accuracy: 0.65, intervalMs: 1900 },
-  medium: { accuracy: 0.78, intervalMs: 1400 },
-  hard: { accuracy: 0.88, intervalMs: 980 }
+  medium: { accuracy: 0.65, intervalMs: 1900 },
+  hard: { accuracy: 0.65, intervalMs: 1900 }
 };
 
 const REWARD_FLIES = {
