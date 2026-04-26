@@ -88,3 +88,13 @@ button.margin-right{
     align-items: center;
 }
 
+.coming_soon{
+    background-color: rgb(87, 181, 87);
+    opacity: 0.8;
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+
+}
