@@ -1,0 +1,21 @@
+.placeholder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;           /* Sets the width */
+    height: 200px;          /* Sets the height */
+    border: 2px solid #000; /* Adds a visible border */
+    background-color: blue; /* Fills the box with color */
+    padding: 20px;          /* Adds space inside the box */
+    margin: 10px;           /* Adds space outside the box */
+}
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: center;
+}
+.home_button {
+    width: 100px;
+    height: 50px;
+    justify-self: start;
+}

@@ -1,19 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swamp Strikers</title>
-    <link rel="Stylesheet" href="swamp_strikers.css" />
-</head>
-<body>
-    <div class="header-container">
-        <a href="math.html">
-            <button class="home_button">Home</button>
-        </a>
-        <h1>Swamp Strikers</h1>
-   </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amphibian Academy - Battle Equation Duel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./swamp_strikers.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="topbar">
+        <h1>Amphibian Academy</h1>
+        <div class="stat-row">
+          <span>Flies: <strong id="fliesValue">0</strong></span>
+          <span>Wins: <strong id="winsValue">0</strong></span>
+        </div>
+      </header>
 
-   <div class="placeholder">placeholder</div>
-</body>
-</html> 
+      <main class="screen">
+        <div class="screen-head">
+          <div>
+            <p class="eyebrow">Battle Equation Duel</p>
+            <h2>Race, Score, Deal Damage</h2>
+          </div>
+          <span id="phaseBadge" class="phase-badge">Idle</span>
+        </div>
+
+        <div class="battle-layout">
+          <aside class="panel battle-side-panel">
+            <h3>Battle Controls</h3>
+
+            <label for="difficultySelect">Difficulty</label>
+            <select id="difficultySelect">
+              <option value="easy">Easy</option>
+              <option value="medium">Medium</option>
+              <option value="hard">Hard</option>
+            </select>
+
+            <p>Round Time: <strong>30s</strong></p>
+            <p>Round: <strong id="roundValue">0</strong></p>
+
+            <div class="button-row compact">
+              <button id="startBtn" class="btn btn-primary">Start Battle</button>
+              <button id="nextRoundBtn" class="btn btn-primary hidden">Next Round</button>
+            </div>
+
+            <div id="damageChip" class="damage-chip hidden"></div>
+            <p id="rewardText" class="reward-text"></p>
+          </aside>
+
+          <section class="panel battle-main-panel">
+            <div class="battle-stage">
+              <div class="fighter-row bot">
+                <div class="fighter-card">
+                  <div class="fighter-meta">
+                    <strong>Pond Bot</strong>
+                    <span><span id="botPoints">0</span> pts</span>
+                  </div>
+                  <div class="hp-track" role="img" aria-label="Bot HP bar">
+                    <div id="botHpFill" class="hp-fill"></div>
+                    <div class="hp-grid" aria-hidden="true">
+                      <span class="hp-cell"></span><span class="hp-cell"></span><span class="hp-cell"></span><span class="hp-cell"></span><span class="hp-cell"></span>
+                      <span class="hp-cell"></span><span class="hp-cell"></span><span class="hp-cell"></span><span class="hp-cell"></span><span class="hp-cell"></span>
+                    </div>
+                  </div>
+                  <div class="hp-label">HP <span id="botHpValue">10</span>/10</div>
+                </div>
+                <div class="sprite-shell bot">
+                  <img src="./public/assets/bot-rival.svg" alt="Bot avatar" class="sprite-img" />
+                </div>
+              </div>
+
+              <div class="battle-center">
+                <div class="timer-orb"><span id="timerValue">30</span>s</div>
+                <div id="countdownValue" class="countdown hidden">3</div>
+              </div>
+
+              <div class="fighter-row player">
+                <div class="fighter-card">
+                  <div class="fighter-meta">
+                    <strong>Your Frog</strong>
+                    <span><span id="playerPoints">0</span> pts</span>
+                  </div>
+                  <div class="hp-track" role="img" aria-label="Player HP bar">
+                    <div id="playerHpFill" class="hp-fill"></div>
+                    <div class="hp-grid" aria-hidden="true">
+                      <span class="hp-cell"></span><span class="hp-cell"></span><span class="hp-cell"></span><span class="hp-cell"></span><span class="hp-cell"></span>
+                      <span class="hp-cell"></span><span class="hp-cell"></span><span class="hp-cell"></span><span class="hp-cell"></span><span class="hp-cell"></span>
+                    </div>
+                  </div>
+                  <div class="hp-label">HP <span id="playerHpValue">10</span>/10</div>
+                </div>
+                <div class="sprite-shell">
+                  <img src="./public/assets/player-frog.svg" alt="Player avatar" class="sprite-img" />
+                </div>
+              </div>
+            </div>
+
+            <form id="answerForm" class="command-box">
+              <p class="command-title">Math Command Deck</p>
+              <p id="questionText" class="question">Battle not live yet.</p>
+
+              <div class="answer-row">
+                <input
+                  id="answerInput"
+                  class="answer-input"
+                  type="text"
+                  inputmode="decimal"
+                  placeholder="Type answer and press Enter"
+                  autocomplete="off"
+                />
+                <button id="submitBtn" class="btn btn-primary" type="submit">Submit</button>
+              </div>
+
+              <p id="statusLine" class="status-line neutral">Press Start Battle to begin.</p>
+            </form>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <script type="module" src="./game_script.js"></script>
+  </body>
+</html>
