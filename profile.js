@@ -35,7 +35,7 @@ function updateFrog() {
     // 00 = naked, 01 = item only, 10 = hat only, 11 = hat + item
     const hatPart  = equippedHat  === "0" ? "0" : equippedHat;
     const itemPart = equippedItem === "0" ? "0" : equippedItem;
-    const filename = `${hatPart}${itemPart}.png`;
+    const filename = `frog_sprites/${hatPart}${itemPart}.png`;
 
     document.getElementById("frog-display").src = filename;
 }
