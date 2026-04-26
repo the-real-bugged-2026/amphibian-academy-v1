@@ -16,7 +16,6 @@ body {
 }
 
 .recent_text {
-    padding-top:100px;
     justify-self: center;
     font-size: 36px;
 }
@@ -27,8 +26,17 @@ body {
     height: 250px;
     text-align: center;
     justify-self: center;
-    background-image: url(Swamp-strikers.png);
-    background-size: 100%;
+
+    background-image: url("Swamp-strikers.png");
+    background-size: cover;        /* looks better than 100% */
+    background-position: center;
+
+    border-radius: 20px;           /* ← rounds corners */
+    overflow: hidden;              /* ensures image respects rounding */
+
+    border: 4px solid #ebf9fe;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25); /* darker, more visible shadow */
 }
 
 .subjects {
@@ -85,8 +93,13 @@ body {
 
 .math:hover,
 .history:hover,
-.science:hover {
+.science:hover{
     transform: scale(1.08) rotate(-2deg);
+    transition: transform 0.2s ease;
+}
+
+.recent_game:hover{
+    transform: scale(1.08);
     transition: transform 0.2s ease;
 }
 
@@ -94,4 +107,26 @@ body {
 footer {
     text-align: center;
     padding-top: 50px;
+}
+
+.recent_text {
+    margin: 0;
+    margin-bottom: 10px; /* smaller gap */
+    padding-top: 10px; /* ← remove the huge space */
+}
+
+.recent_container {
+    margin: 50px auto;
+    text-align: center;
+
+    width: 700px;
+    padding: 5px 5px 10px 5px;
+
+
+    background: rgba(242, 224, 88, 0.5); /* same minty transparent */
+    border-radius: 25px;
+
+    border: 4px solid #debe68;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
