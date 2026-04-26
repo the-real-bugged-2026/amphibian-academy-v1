@@ -22,3 +22,9 @@ button.margin-right{
     height: 50px;
     justify-self: start;
 }
+
+.header-container {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
