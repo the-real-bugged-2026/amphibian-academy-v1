@@ -8,7 +8,7 @@ body {
 
 .title {
     justify-self: center;
-    font-size: 48px
+    font-size: 48px;
 }
 
 .recent_games {
@@ -23,10 +23,12 @@ body {
 
 
 .recent_game{
-    width: 150px; 
-    height: 150px;
+    width: 250px; 
+    height: 250px;
     text-align: center;
     justify-self: center;
+    background-image: url(Swamp-strikers.png);
+    background-size: 100%;
 }
 
 .subjects {
