@@ -1,4 +1,5 @@
 /* math.html */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 body {
     font-family: 'Caveat', cursive;
     background-image: url(Website_Background.png);
@@ -15,7 +16,10 @@ body {
 button.margin-right{
     margin-right: 20px;
 }
-
+.title{
+font-size: 65px;
+}
+ 
 
 .math_game {
     width: 225px;

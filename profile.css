@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 body{
     position: relative;   /*for pseudo-element positioning */
 }
 
 body::before{
   content: "";
+  font-family: 'Caveat', cursive;
   position: fixed;
   inset: 0;
   background-image: url(Website_Background.png);
@@ -18,6 +20,11 @@ body::before{
   width: 100%;
   height: 100%;
   z-index: -1; */
+}
+
+.title{
+  font-family: 'Caveat', cursive;
+  font-size: 48px;
 }
 
 .items {
