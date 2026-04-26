@@ -2,6 +2,8 @@
 
 body {
     font-family: 'Caveat', cursive;
+    background-image: url(Website_Background.png);
+    background-size: 100%;
 }
 
 .title {
