@@ -62,7 +62,7 @@ body {
     0 var(--cut)
   ); */
   border-radius: 25px;
-  /* border: 4px solid #40916c; */
+  border: 4px solid #40916c;
   background:
     linear-gradient(130deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0) 45%),
     var(--surface);
