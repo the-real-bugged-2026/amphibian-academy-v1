@@ -556,6 +556,29 @@ input:focus-visible {
   outline-offset: 2px;
 }
 
+  .fish_back {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+
+    width: 200px;
+    height: 200px;
+
+    background-image: url("Fish_button.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+
+    display: block;
+    z-index: 9999;
+}
+
+  .fish_back:hover {
+    transform: scale(1.1) rotate(-5deg);
+    transition: transform 0.2s ease;
+  }
+
 @media (max-width: 1120px) {
   .battle-layout {
     grid-template-columns: 1fr;
@@ -603,6 +626,7 @@ input:focus-visible {
   .app {
     padding: 0.55rem;
   }
+
 
   .screen,
   .panel,
