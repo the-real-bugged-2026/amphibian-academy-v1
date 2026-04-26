@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+body {
+    font-family: 'Caveat', cursive;
+}
+
 .title {
     justify-self: center;
+    font-size: 48px
 }
 
 .recent_games {
@@ -9,6 +16,7 @@
 .recent_text {
     padding-top:100px;
     justify-self: center;
+    font-size: 36px;
 }
 
 
@@ -21,26 +29,50 @@
 
 .subjects {
     justify-self: center;
+    text-align: center;
 }
 
 .subjects_text {
     text-align: center;
+    font-size: 40px;
 }
 
-.math{
-    width: 150px; 
-    height: 75px;
+.math,
+.history,
+.science {
+    width: 150px;
+    height: 150px;
+
+    background-image: url("Lilypad.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    color: white;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+
+    padding: 0;
+    margin: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    vertical-align: middle;
+   
 }
 
-.history{
-    width: 150px; 
-    height: 75px;
+.math:hover,
+.history:hover,
+.science:hover {
+    transform: scale(1.08) rotate(-2deg);
+    transition: transform 0.2s ease;
 }
 
-.science{
-    width: 150px; 
-    height: 75px;
-}
 
 footer {
     text-align: center;
