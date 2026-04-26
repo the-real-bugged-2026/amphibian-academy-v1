@@ -27,10 +27,12 @@ body {
 body {
   font-family: 'Caveat', cursive;
   color: var(--ink);
-  background:
+  /* background:
     radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.35), transparent 30%),
     radial-gradient(circle at 84% 15%, rgba(160, 236, 255, 0.28), transparent 32%),
-    linear-gradient(160deg, #87ceff 0%, #63a9d4 30%, #4f997f 62%, #215f63 100%);
+    linear-gradient(160deg, #87ceff 0%, #63a9d4 30%, #4f997f 62%, #215f63 100%); */
+  background-image: url(Website_Background.png);
+  background-size: 100%;
 }
 
 .app {
@@ -67,13 +69,13 @@ body {
   padding: 0.72rem 1rem;
 }
 
-.topbar h1 {
+/* .topbar h1 {
   margin: 0;
   font-family: 'Caveat', cursive;
   font-size: clamp(1.4rem, 2.9vw, 2.35rem);
   letter-spacing: 0.03em;
   font-weight: 700;
-}
+} */
 
 .stat-row {
   display: flex;
@@ -283,9 +285,11 @@ select {
     var(--cut) 100%,
     0 calc(100% - var(--cut))
   );
-  background:
+  /* background:
     radial-gradient(circle at 72% 18%, rgba(255, 255, 255, 0.58), transparent 42%),
-    linear-gradient(170deg, #d7fae8, #b5e2c8);
+    linear-gradient(170deg, #d7fae8, #b5e2c8); */
+  background-image: url(Star_Background.png);
+  background-size: 100%;
   padding: 1rem;
 }
 
