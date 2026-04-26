@@ -1,0 +1,24 @@
+/* math.html */
+.flex-parent{
+    display: flex;
+}
+
+.jc-center{
+    justify-content: center;
+}
+
+button.margin-right{
+    margin-right: 20px;
+}
+
+.math_game {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.home_button {
+    width: 100px;
+    height: 50px;
+    justify-self: start;
+}
